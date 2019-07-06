@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/beijingtu"
+    android:layout_margin="20dp"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="264dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/touxiang"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/uname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:focusable="true"
+        android:hint="请输入用户名" />
+
+    <EditText
+        android:id="@+id/upwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:focusable="true"
+        android:hint="请输入密码"
+        android:inputType="textPassword" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <CheckBox
+            android:id="@+id/rememberpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="记住密码"/>
+
+        <CheckBox
+            android:id="@+id/showpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:text="显示密码" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:src="@mipmap/dl" />
+
+        <ImageButton
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:src="@mipmap/qx" />
+    </LinearLayout>
+
+</LinearLayout>
